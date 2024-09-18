@@ -9,7 +9,7 @@ export default function ReactState(){
     if (isFancy) {
       return (
         <div>
-          <Counter isFancy={true} />
+          <Counter isFancy={true} ttt="abc"/>
           <label>
             <input
               type="checkbox"
@@ -25,7 +25,7 @@ export default function ReactState(){
     }
     return (
       <div>
-        <Counter isFancy={false} />
+        <Counter isFancy={false} ttt="def"/>
         <label>
           <input
             type="checkbox"
