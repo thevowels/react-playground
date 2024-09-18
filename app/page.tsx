@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Counter from "./components/counter";
 import ReactState from "./components/reactstate";
+import Canvas from "./components/dotWithCanvas"
+
 import "./styles.css"
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
           priority
         />
 
-        <ReactState/>
+        <Canvas/>
 
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
