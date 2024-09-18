@@ -12,6 +12,7 @@ export default function Canvas(){
     
     return(
         <>
+
             <Dot position={pos1} opacity={0.6}/>
             <Dot position={pos2} opacity={0.4}/>
             <Dot position={pos3} opacity={0.3}/>
@@ -25,18 +26,18 @@ export default function Canvas(){
 
 function Dot({position, opacity}){
     return(
-        <div style={{
+            <div style={{
             position: 'absolute',
             backgroundColor: 'pink',
             borderRadius: '50%',
-            opacity,
             transform: `translate(${position.x}px, ${position.y}px)`,
             pointerEvents: 'none',
             left: -20,
             top: -20,
             width: 40,
             height: 40,
+            opacity, // Set opacity to 0 by default
+    
         }}/>
-
     )
 }

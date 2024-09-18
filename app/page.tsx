@@ -4,6 +4,7 @@ import ReactState from "./components/reactstate";
 import Canvas from "./components/dotWithCanvas"
 
 import "./styles.css"
+import StopWatch from "./components/stopwatch";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         />
 
         <Canvas/>
+        <StopWatch/>
 
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
